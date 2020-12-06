@@ -1,0 +1,78 @@
+/* CSS files add styling rules to your content */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground: #F3F3ED;
+  --background: #272822;
+}
+
+body {
+  font-family: monospace;
+  text-align: center;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+#head {
+  padding: 10px;
+  margin-top: 1em;
+}
+
+#editor {
+  border: 3px solid #2F3129;
+  margin: auto;
+  width: 60%;
+  height: max(60vh, 20em);
+}
+
+form input, textarea {
+  display: block;
+  margin: 0.5em auto;
+  background: transparent;
+  width: 30em;
+  color: inherit;
+  font: inherit;
+  border: none;
+  outline: none;
+  border-bottom: solid var(--foreground) 2px;
+}
+
+form textarea {
+  resize: none;
+}
+
+form *:focus::placeholder {
+  color: var(--foreground);
+  transition: 0.2s;
+}
+
+form input[type="submit"] {
+  border: solid var(--foreground) 2px;
+}
+
+form input[type="submit"]:hover {
+  background: var(--foreground);
+  color: var(--background);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#outputs {
+  display: flex;
+  margin: 0 auto;
+  width: 30em;
+}
+
+#outputs input{
+  flex: 1;
+  margin-right: 5px;
+}
+
+#outputs input:last-child {
+  margin-left: 5px;
+  margin-right: 0;
+}
