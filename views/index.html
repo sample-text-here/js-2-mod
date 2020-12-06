@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="$name" />
+    <meta property="og:image" content="/icon.png" />
+    <meta property="og:description" content="$description" />
+    <link rel="icon" href="/icon.png" />
+    <meta name="theme-color" content="#8f00ff" />
+
+    <title>js 2 mod</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/jsZip.js"></script>
+    <script src="/ace.js"></script>
+    <script src="/fileSaver.js"></script>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div id="head">
+      <h1>turns js into a mod</h1>
+      <p>h</p>
+      <br />
+      <form id="mod" autocomplete="off">
+        <input name="name" type="text" placeholder="mod name" />
+        <input name="author" type="text" placeholder="author" />
+        <textarea
+          name="description"
+          type="text"
+          placeholder="description"
+        ></textarea>
+        <div id="outputs">
+          <input
+            type="submit"
+            value="make the mod"
+            id="make"
+            title="because im too lazy to"
+          />
+          <input type="submit" id="save" value="save the mod" title="h" />
+        </div>
+      </form>
+    </div>
+    <div id="editor">print("Hello, world!");</div>
+  </body>
+</html>
